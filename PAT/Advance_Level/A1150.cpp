@@ -24,7 +24,6 @@ bool isC(vector<int> a){
 	if(cnt != n)	return false;
 	return true;
 }
-
 bool TS(vector<int> a){
 	if(a.size() != n + 1)	return false;
 	vector<bool> h(n + 1);
@@ -32,6 +31,7 @@ bool TS(vector<int> a){
 		if(h[a[i]])	return false;
 		h[a[i]]	=	true;
 	}
+
 	return true;
 }
 
